@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phương trình bậc 2</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var a = prompt('Nhập giá trị của a :')
+var b = prompt('Nhập giá trị của b :')
+var c = prompt('Nhập giá trị của c :')
+
+delta = b*b - (4*a*c);
+if (delta > 0){
+    alert ("phuong trinh co 2 ngiem phan biet do la x1 =" + ((-b - Math.sqrt(delta)) /(2*a) + "va x2 = " +  ((-b + Math.sqrt(delta)) /(2*a) )));
+  
+}  else if (delta == 0){
+    alert ("phuong trinh co 1 nghiem kep la x1 = x2 = " + (-b)/(2*a));
+
+}else{
+    alert ("phuong trinh vo nghiem")
+}
+
+	
+    
+</script>
+</body>
+</html>
