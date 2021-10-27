@@ -8,7 +8,7 @@
     <script>
         var n;
         do{
-            n = prompt("Input number to check!please ");
+            n = document.write("Input number to check!please ");
             if(!isNaN(n)){
                 break;
             } else {
@@ -24,8 +24,8 @@
                 flag = fales;
 
             }else{
-                for (var i = 2;i < n;i++){
-                    if (n % i == 0){
+                for (var i = 2;i < n-1;i++){
+                    if (n % 2 == 0){
                         flag = false;
                         break;
                     }
@@ -33,15 +33,16 @@
             }
             // kiem tra bien flag
             if (flag == true){
-                document.write(n + " la STN");
+                console.log(n + " la STN");
             }else{
-                document.write(n + " ko phai SNT");
+                console.log(n + " ko phai SNT");
             }
         }
-        check_snt(n);
+       
     </script>
 </head>
 <body>
     
+      
 </body>
 </html>
